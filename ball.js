@@ -25,6 +25,36 @@ export default class ball
         ctx.restore();
     }
 
+
+    wallColision(hit)
+    {
+        if (hit === 'side')
+        {
+            this.xV = this.xV * -1; // might need more
+        }
+
+        if (hit === 'celing')
+        {
+            this.yV = this.yV * -1; //might need more
+        }
+        
+    }
+
+    paddleColision()
+    {
+        this.xV = this.xV * -1; //seems odd but will work for now come back to
+        this.yV = this.yV * -1;
+    }
+
+    brickColision()
+    {
+        this.xV = this.xV * -1; //seems odd but will work for now come back to
+        this.yV = this.yV * -1;
+    }
+
+
+
+
     update()
     {
         

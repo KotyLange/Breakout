@@ -4,6 +4,9 @@ export default class paddle
     {
         this.x = x;
         this.y = y;
+        this.width = 25; //temp numbers
+        this.height = 4; // temp numbers 
+
         this.direction = 'null';
         this.update = this.update.bind(this);
 
@@ -12,7 +15,10 @@ export default class paddle
 
     render(ctx)
     {
-        
+        ctx.save();
+        ctx.fillStyle = 'red';
+        ctx.fillRect(this.x, this.y, this.width, this.height);
+        ctx.restore();
     }
 
     update()

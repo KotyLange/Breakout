@@ -43,10 +43,6 @@ export default class Game
 
 
 
-
-
-
-
     handleKeyDown(event)
     {
         event.preventDefault();
@@ -63,4 +59,34 @@ export default class Game
                 break;
         }
     }
+
+
+
+
+
+
+    render()
+    {
+        
+    }
+
+    update()
+    {
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
